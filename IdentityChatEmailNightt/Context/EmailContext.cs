@@ -10,6 +10,7 @@ namespace IdentityChatEmailNightt.Context
         {
             optionsBuilder.UseSqlServer("Server=FURKAN;initial Catalog=EmailChatNightDb; integrated security=true;trust server certificate=true;");
         }
+        public DbSet<Message> messages { get; set; }
     }
 }
 
